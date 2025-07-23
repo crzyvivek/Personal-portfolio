@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Kumar - Full Stack Developer</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+    <!-- ✅ Your External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-gray-50 font-sans">
+    <!-- Mobile Menu Toggle -->
+    <button id="mobileMenuToggle" class="fixed top-4 left-4 z-50 lg:hidden bg-primary text-white p-3 !rounded-button">
+        <div class="w-6 h-6 flex items-center justify-center">
+            <i class="ri-menu-line"></i>
+        </div>
+    </button>
+
+    <!-- Left Sidebar -->
+    <div id="sidebar" class="mobile-menu fixed left-0 top-0 w-80 h-full profile-card text-white z-40 lg:translate-x-0">
+        <!-- Close button for mobile -->
+        <button id="closeMobileMenu" class="absolute top-4 right-4 lg:hidden text-white">
+            <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-close-line"></i>
+            </div>
+        </button>
+
+        <div class="p-8 h-full flex flex-col">
+            <!-- Profile Image -->
+            <div class="text-center mb-8">
+                <div class="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/20">
+                    <img src="profile.jpg" alt="Vivek Kumar" class="w-full h-full object-cover object-top">
+                </div>
+                <h1 class="text-2xl font-bold mb-2">Vivek Kumar</h1>
+                <p class="text-lg text-blue-200">Full Stack Developer</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-4 mb-8">
+                <a href="tel:+919876543210" class="flex items-center space-x-3 text-white/90 hover:text-white transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    <span>+919870669318</span>
+                                    </a>
+                <a href="mailto:vivek.kumar@email.com" class="flex items-center space-x-3 text-white/90 hover:text-white transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <span>vk8677318@gmail.com</span>
+                </a>
+                <a href="https://maps.app.goo.gl/rmhGkYrRc4R6RZbe6?g_st=ac" target="_blank" class="flex items-center space-x-3 text-white/90 hover:text-white transition-colors">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                    <span>Rampur, Uttar Pradesh, 244901, India</span>
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex space-x-4 mb-8">
+                <a href="https://instagram.com/crzy_vivek" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://t.me/crzy_vivek" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+                    <i class="ri-telegram-line"></i>
+                </a>
+                <a href="https://wa.me/qr/OKTN7MRAWI3CH1" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </div>
+
+            <!-- Download CV Button -->
+            <div class="mt-auto">
+                <button class="w-full bg-secondary hover:bg-blue-600 text-white py-3 px-6 !rounded-button transition-colors whitespace-nowrap">
+                    <div class="flex items-center justify-center space-x-2">
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-download-line"></i>
+                        </div>
+                        <span>Download CV</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="lg:ml-80 min-h-screen">
+        <!-- Hero Section -->
+        <section class="px-6 lg:px-12 py-16 lg:py-24">
+            <div class="max-w-4xl">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 animate-fade-in">
+                    Welcome to My Digital Space
+                </h2>
+                <p class="text-xl text-gray-600 leading-relaxed mb-8 animate-fade-in">
+                    I'm a passionate Full Stack Developer with 5+ years of experience creating innovative web solutions. 
+                    I specialize in React, Node.js, and cloud technologies, turning complex problems into elegant, 
+                    user-friendly applications that drive business growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="px-6 lg:px-12 py-16 bg-white">
+            <h3 class="text-3xl font-bold text-gray-800 mb-12">Featured Projects</h3>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl">
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20interface%20showing%20clean%20product%20listings%20and%20shopping%20cart%2C%20professional%20web%20design%2C%20blue%20and%20white%20color%20scheme%2C%20minimalist%20layout%2C%20high%20quality%20screenshot&width=400&height=300&seq=project1&orientation=landscape" alt="E-commerce Platform" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">E-commerce Platform</h4>
+                        <p class="text-gray-600 mb-4">A full-featured online marketplace built with React and Node.js, featuring real-time inventory management and secure payment processing.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=task%20management%20dashboard%20interface%20with%20kanban%20boards%20and%20project%20tracking%2C%20modern%20web%20application%20design%2C%20clean%20UI%20with%20charts%20and%20progress%20bars%2C%20professional%20software%20interface&width=400&height=300&seq=project2&orientation=landscape" alt="Task Management App" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Task Management App</h4>
+                        <p class="text-gray-600 mb-4">A collaborative project management tool with real-time updates, team collaboration features, and advanced analytics dashboard.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Vue.js</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Firebase</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">PWA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=financial%20analytics%20dashboard%20with%20charts%20and%20graphs%2C%20modern%20fintech%20application%20interface%2C%20data%20visualization%20with%20blue%20and%20green%20color%20scheme%2C%20professional%20banking%20software&width=400&height=300&seq=project3&orientation=landscape" alt="Financial Dashboard" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Financial Dashboard</h4>
+                        <p class="text-gray-600 mb-4">A comprehensive financial analytics platform with real-time data visualization, automated reporting, and predictive insights.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Angular</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Express</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=mobile%20health%20and%20fitness%20app%20interface%20showing%20workout%20tracking%20and%20health%20metrics%2C%20modern%20healthcare%20application%20design%2C%20clean%20UI%20with%20progress%20indicators%20and%20charts&width=400&height=300&seq=project4&orientation=landscape" alt="Health & Fitness App" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Health & Fitness App</h4>
+                        <p class="text-gray-600 mb-4">A mobile-first wellness application with workout tracking, nutrition planning, and social features to motivate healthy lifestyle choices.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React Native</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">GraphQL</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+   
+        <!-- Skills Section -->
+        <section class="px-6 lg:px-12 py-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-12">Technical Skills</h3>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-6">Frontend</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">React.js</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-secondary h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">Vue.js</span>
+                                <span class="text-gray-500">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-secondary h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">TypeScript</span>
+                                <span class="text-gray-500">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-secondary h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-6">Backend</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">Node.js</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">Python</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">MongoDB</span>
+                                <span class="text-gray-500">87%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-green-500 h-2 rounded-full" style="width: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-6">DevOps</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">AWS</span>
+                                <span class="text-gray-500">82%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-orange-500 h-2 rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">Docker</span>
+                                <span class="text-gray-500">78%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-orange-500 h-2 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">Kubernetes</span>
+                                <span class="text-gray-500">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-orange-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+              <!-- Education Section -->
+        <section class="px-6 lg:px-12 py-16 bg-white">
+            <h3 class="text-3xl font-bold text-gray-800 mb-12">Education</h3>
+            <div class="max-w-4xl space-y-6">
+                <div class="education-card bg-gray-50 p-6 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" data-education="masters">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800">Master of Computer Applications</h4>
+                            <p class="text-gray-600 mb-2">Indian Institute of Technology, Delhi</p>
+                            <p class="text-gray-500">2018 - 2020</p>
+                        </div>
+                        <div class="bg-secondary text-white px-4 py-2 rounded-lg">
+                            <span class="font-semibold">8.7 CGPA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card bg-gray-50 p-6 rounded-xl cursor-pointer hover:shadow-lg transition-shadow" data-education="bachelors">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800">Bachelor of Computer Science</h4>
+                            <p class="text-gray-600 mb-2">Delhi University</p>
+                            <p class="text-gray-500">2015 - 2018</p>
+                        </div>
+                        <div class="bg-secondary text-white px-4 py-2 rounded-lg">
+                            <span class="font-semibold">8.2 CGPA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="px-6 lg:px-12 py-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-12">Get In Touch</h3>
+            <div class="max-w-2xl">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:border-secondary">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:border-secondary">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:border-secondary resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-primary hover:bg-gray-800 text-white py-3 px-8 !rounded-button transition-colors whitespace-nowrap">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="px-6 lg:px-12 py-8 bg-gray-100">
+            <div class="text-right">
+                <p class="text-gray-600">Made by Vivek</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Education Modal -->
+    <div id="educationModal" class="fixed inset-0 bg-black bg-opacity-50 modal-backdrop hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-gray-800"></h3>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-close-line"></i>
+                        </div>
+                    </button>
+                </div>
+                <div id="modalContent" class="space-y-4">
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

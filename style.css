@@ -1,0 +1,82 @@
+<style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        
+        .profile-card {
+            background: linear-gradient(135deg, #2D3E50 0%, #34495E 100%);
+        }
+
+        
+        .skill-progress {
+            transition: width 1s ease-in-out;
+        }
+        
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .contact-input {
+            transition: border-color 0.3s ease;
+        }
+        
+        .contact-input:focus {
+            border-color: #3498DB;
+            outline: none;
+        }
+        
+        .modal-backdrop {
+            backdrop-filter: blur(5px);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+          
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+#mobileMenuToggle {
+  background-color: #2D3E50;
+   /* dark background */
+  color: white;
+  padding: 10px 12px; /* adjust size */
+  border-radius: 8px; /* rounded corners */
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+
+  .borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+}
+.mt-auto{
+  background-color: #3498DB
+}
+    </style>
